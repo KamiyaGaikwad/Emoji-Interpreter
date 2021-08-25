@@ -7,7 +7,13 @@ const emojiDictionary = {
   "😔": "Sad",
   "🥡": "Takeout Box",
   "❤️": "Love",
-  "😑": "Annoyance"
+  "😑": "Annoyance",
+  "😏": "Smirking",
+  "🤔": "Thinking",
+  "🎉": "Party Popper",
+  "🧮": "Abacus",
+  "☢️": "Radioactive",
+  "♨️": "Hot Springs"
 };
 
 var emojiWeKnow = Object.keys(emojiDictionary);
@@ -31,12 +37,12 @@ export default function App() {
   return (
     <div className="App">
       <h1> Inside Outt</h1>
-      <input onChange={emojiHandler}></input>
-      <h2>{meaning}</h2>
+      <input onChange={emojiHandler} placeholder="Paste an emoji to know its name"></input>
+      <h2><span id="blocky">{meaning}</span></h2>
       <h3> Emoji's we know </h3>
       {emojiWeKnow.map(function (emoji) {
         return (
-          <span key={emoji} onClick={() => emojiClickHandler(emoji)}>
+          <span id="emo-span" key={emoji} onClick={() => emojiClickHandler(emoji)}>
             {" "}
             {emoji}{" "}
           </span>
