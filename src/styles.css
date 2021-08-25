@@ -1,14 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap");
+
+body {
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .App {
-  font-family: sans-serif;
+  font-family: "Mukta", sans-serif;
   text-align: center;
 }
 
 input {
   padding: 1rem;
+  width: 12.2rem;
+  border-color: #c51162;
+  background-color: #e7e8ea;
+  border-radius: 0.3rem;
 }
 
-span {
+#emo-span {
   font-size: 2rem;
-  cursor : pointer;
-  padding : 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
 }
+
+h1 {
+  font-family: "Play", sans-serif;
+  font-size: 2.5rem;
+  color: #60435f;
+}
+
+#blocky {
+  background-color: #fbc7d4;
+  padding: 6px 10px;
+  border-radius: 1rem;
+}
+#blocky:empty {
+  background-color: transparent;
+}
+
+input:focus {
+  outline: 2px solid violet;
+}
+
